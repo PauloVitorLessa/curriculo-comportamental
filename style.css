@@ -1,0 +1,203 @@
+html, body, h2{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;        
+} 
+
+h1 {
+     
+    font-size: clamp(30px, 3vw, 50px);
+    margin-bottom: 10px;
+}
+h3{
+    font-size: clamp(25px, 3vw, 35px);
+    margin-bottom: 10px;
+}
+p {
+    font-size: clamp(15px, 3vw, 20px);
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media print{
+
+    body{
+        padding: 0 !important;
+    }
+    .container{      
+        visibility: visible;
+    }
+    #links{
+        display: block !important;
+    }
+    #logo{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px){
+
+    #conteudo{
+        
+        display: block !important;
+    }
+    #sub_conteudo{
+        margin: 0 !important; 
+        padding: 0 !important;
+    }
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.container{ 
+    padding-left: 50px;
+    padding-right: 50px;    
+    width: max-content;
+    background-color: white;   
+    display: grid;
+    grid-template-columns: 60vw;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "l1 "
+                         "l2 "
+                         "l3 "
+                         "l4 "
+                         "l5"
+                         "l6";
+                                                   
+}
+
+
+
+
+.foto{
+    border-radius: 50%;
+    max-width: 50%;
+    
+}
+
+#dadosPessoais{
+    grid-area: l1;    
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "c d"
+                         "e d"
+                         "f f";
+}
+
+.btn{
+    grid-area: f;
+}
+
+#conteudo{   
+    margin-top: 30px;     
+    grid-area: l2;
+    min-height: 400px;
+    font-family: 'Quicksand', sans-serif;
+    font-size:19px;
+	font-weight:bold;
+    display: flex;    
+}
+
+#divFoto{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;       
+    grid-area: d;
+}
+
+.btn Button {
+	box-shadow: 0px 10px 14px -7px #0e0e0e;
+	background:linear-gradient(to bottom, #000000 5%, #727570 100%);
+	border-radius:4px;
+	border:1px solid #6b6b6b;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+    font-family: 'Quicksand', sans-serif;	
+	font-size:19px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #242e1d;
+}
+#conteudo Button {
+    text-align: left;
+    width: 218px;
+	box-shadow: 0px 10px 14px -7px #0e0e0e;
+	background:linear-gradient(to bottom, #000000 5%, #727570 100%);	
+	border-radius:4px;
+	border:1px solid #6b6b6b;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+    font-family: 'Quicksand', sans-serif;	
+	font-size:18px;
+	font-weight:bold;
+	padding:2px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #242e1d;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    font-family: 'Quicksand', sans-serif;
+    font-size:19px;
+	font-weight:bold;
+    padding: 4px;
+
+}
+.btn Button:hover {
+	background:linear-gradient(to bottom, #727570 5%, #000000 100%);
+	background-color:#727570;
+}
+Button:active {
+	position:relative;
+	top:1px;
+}
+
+#contato{
+    
+    display: flex;
+    flex-direction: column;    
+    align-content: center;    
+}
+
+#logo img{
+    width: 100px;
+}
+
+#links{
+    display: none;
+}
+
+.div_forcas{
+    display: none;
+}
+.div_fraquezas{
+    display: none;
+}
+
+#sub_conteudo{
+    margin-left: 100px;
+    margin-right: 200px;
+    padding: 50px;
+}
+#sub_conteudo p{
+    padding-top: 20px;
+}
+
